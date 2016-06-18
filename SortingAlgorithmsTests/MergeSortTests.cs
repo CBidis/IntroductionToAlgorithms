@@ -1,0 +1,18 @@
+﻿using NUnit.Framework;
+using SortingAlgorithms;
+
+namespace SortingAlgorithmsTests
+{
+    [TestFixture]
+    public class MergeSortTests
+    {
+        [Test]
+        public void Test()
+        {
+            var mergeSort = new MergeSort();
+            var array = new[] { 5, 2, 4, 7, 1, 3, 1, 6 };
+            mergeSort.Run(array, 0, array.Length-1);
+            Assert.IsTrue(array.IsSorted());
+        }
+    }
+}
