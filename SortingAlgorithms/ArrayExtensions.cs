@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace SortingAlgorithmsTests
+namespace SortingAlgorithms
 {
-    static class ArrayExtensions
+    public static class ArrayExtensions
     {
         public static bool IsSortedAscending<T>(this T[] array) where T : struct, IComparable<T>
         {
