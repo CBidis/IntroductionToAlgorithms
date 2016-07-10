@@ -2,7 +2,7 @@
 
 namespace SortingAlgorithms
 {
-    public class SelectionSort<T> where T : struct, IComparable<T>
+    public class SelectionSort<T> where T : IComparable<T>
     {
         /// <summary>
         /// It sorts the elements of the input array in an increasing order

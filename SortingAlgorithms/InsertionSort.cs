@@ -28,7 +28,7 @@ namespace SortingAlgorithms
 
         /// <summary>
         /// It sorts the elements of the input array in non increasing order
-        /// using the insertiopn sort algorithm.
+        /// using the insertion sort algorithm.
         /// </summary>
         /// <param name="elements"></param>
         public void RunNonIncreasing(T[] elements)

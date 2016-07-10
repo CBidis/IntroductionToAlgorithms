@@ -2,7 +2,7 @@
 
 namespace SortingAlgorithms
 {
-    public class Search<T> where T : struct, IComparable<T>
+    public class Search<T> where T : IComparable<T>
     {
         /// <summary>
         /// Takes an array and it does a linear search to find the first elelemt in the array that is 

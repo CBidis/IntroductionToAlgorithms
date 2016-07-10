@@ -2,19 +2,24 @@
 
 namespace SortingAlgorithms
 {
-    public class BubbleSort<T> where T : struct, IComparable<T>
+    public class BubbleSort<T> where T : IComparable<T>
     {
-        public void Run(T[] array)
+        /// <summary>
+        /// It sorts the elements of the input array in an increasing order
+        /// using the bubble sort algorithm.
+        /// </summary>
+        /// <param name="elements"></param>
+        public void Run(T[] elements)
         {
-            for (int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < elements.Length - 1; i++)
             {
-                for (int j = array.Length - 1; j > i; j--)
+                for (int j = elements.Length - 1; j > i; j--)
                 {
-                    if (array[j - 1].CompareTo(array[j]) > 0)
+                    if (elements[j - 1].CompareTo(elements[j]) > 0)
                     {
-                        var temp = array[j - 1];
-                        array[j - 1] = array[j];
-                        array[j] = temp;
+                        var temp = elements[j - 1];
+                        elements[j - 1] = elements[j];
+                        elements[j] = temp;
                     }
                 }
             }
