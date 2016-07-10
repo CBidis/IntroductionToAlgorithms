@@ -8,7 +8,7 @@ namespace SortingAlgorithms
         /// It sorts the elements of the input array in an increasing order
         /// using the selection sort algortihm.
         /// </summary>
-        /// <param name="elements"></param>
+        /// <param name="array"></param>
         public void Run(T[] array)
         {
             if (array == null) throw new ArgumentException("array cannot be null");
@@ -24,9 +24,7 @@ namespace SortingAlgorithms
                 }
                 if (indexOfSmallest != i)
                 {
-                    var temp = array[i];
-                    array[i] = array[indexOfSmallest];
-                    array[indexOfSmallest] = temp;
+                    array.Swap(i, indexOfSmallest);
                 }
             }
         }

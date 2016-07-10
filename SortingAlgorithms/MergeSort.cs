@@ -1,10 +1,13 @@
-﻿namespace SortingAlgorithms
+﻿using System;
+
+namespace SortingAlgorithms
 {
     public class MergeSort
     {
-        public void Run(int[] A, int p, int r)
+        public void Run(int[] array, int p, int r)
         {
-            MergeSortAlgorithm(A, p, r);
+            if (array == null) throw new ArgumentException("array canno be null");
+            MergeSortAlgorithm(array, p, r);
         }
 
         private void MergeSortAlgorithm(int[] A, int p, int r)

@@ -8,21 +8,22 @@ namespace SortingAlgorithms
         /// It sorts the elements of the input array in an increasing order
         /// using the insertion sort algortihm.
         /// </summary>
-        /// <param name="elements"></param>
-        public void Run(T[] elements)
+        /// <param name="array"></param>
+        public void Run(T[] array)
         {
-            for (int j = 1; j < elements.Length; j++)
+            if (array == null) throw new ArgumentException("array cannot be null");
+            for (int j = 1; j < array.Length; j++)
             {
-                var key = elements[j];
+                var key = array[j];
                 // Insert elements[j] into the sorted sequence A[1..j-1]
                 var i = j - 1;
                 while (i >= 0
-                    && elements[i].CompareTo(key) > 0)
+                    && array[i].CompareTo(key) > 0)
                 {
-                    elements[i + 1] = elements[i];
+                    array[i + 1] = array[i];
                     i = i - 1;
                 }
-                elements[i + 1] = key;
+                array[i + 1] = key;
             }
         }
 
@@ -30,21 +31,22 @@ namespace SortingAlgorithms
         /// It sorts the elements of the input array in non increasing order
         /// using the insertion sort algorithm.
         /// </summary>
-        /// <param name="elements"></param>
-        public void RunNonIncreasing(T[] elements)
+        /// <param name="array"></param>
+        public void RunNonIncreasing(T[] array)
         {
-            for (int j = 1; j < elements.Length; j++)
+            if (array == null) throw new ArgumentException("array cannot be null");
+            for (int j = 1; j < array.Length; j++)
             {
-                var key = elements[j];
+                var key = array[j];
                 // Insert elements[j] into the sorted sequence A[1..j-1]
                 var i = j - 1;
                 while (i >= 0
-                    && elements[i].CompareTo(key) < 0)
+                    && array[i].CompareTo(key) < 0)
                 {
-                    elements[i + 1] = elements[i];
+                    array[i + 1] = array[i];
                     i = i - 1;
                 }
-                elements[i + 1] = key;
+                array[i + 1] = key;
             }
         }
     }
