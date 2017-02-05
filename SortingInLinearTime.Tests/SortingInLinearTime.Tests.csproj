@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55DAF793-05AC-4E89-B69E-0A96F16CF1F2}</ProjectGuid>
+    <ProjectGuid>{3B596501-69A2-43BB-8B3A-BE8D0A53655C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SortingAlgorithms</RootNamespace>
-    <AssemblyName>SortingAlgorithms</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>SortingInLinearTime.Tests</RootNamespace>
+    <AssemblyName>SortingInLinearTime.Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,6 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=3.6.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\NUnit.3.6.0\lib\net45\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,18 +44,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSort.cs" />
-    <Compile Include="InsertionSort.cs" />
-    <Compile Include="MergeSort.cs" />
+    <Compile Include="CountingSortTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search.cs" />
-    <Compile Include="SelectionSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\SortingCommonLib\SortingCommonLib.csproj">
       <Project>{512b444f-9f73-46be-af8f-c111b02b7154}</Project>
       <Name>SortingCommonLib</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SortingInLinearTime\SortingInLinearTime.csproj">
+      <Project>{cd65d101-682a-49a7-9cbf-933c5f35e339}</Project>
+      <Name>SortingInLinearTime</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

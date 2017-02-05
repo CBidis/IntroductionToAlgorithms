@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithms", "SortingAlgorithms\SortingAlgorithms.csproj", "{55DAF793-05AC-4E89-B69E-0A96F16CF1F2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingAlgorithmsTests", "SortingAlgorithmsTests\SortingAlgorithmsTests.csproj", "{8341A3FC-28BE-46EA-8AF3-097F9A94DFB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingInLinearTime", "SortingInLinearTime\SortingInLinearTime.csproj", "{CD65D101-682A-49A7-9CBF-933C5F35E339}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingInLinearTime.Tests", "SortingInLinearTime.Tests\SortingInLinearTime.Tests.csproj", "{3B596501-69A2-43BB-8B3A-BE8D0A53655C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SortingCommonLib", "SortingCommonLib\SortingCommonLib.csproj", "{512B444F-9F73-46BE-AF8F-C111B02B7154}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{8341A3FC-28BE-46EA-8AF3-097F9A94DFB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8341A3FC-28BE-46EA-8AF3-097F9A94DFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8341A3FC-28BE-46EA-8AF3-097F9A94DFB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD65D101-682A-49A7-9CBF-933C5F35E339}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD65D101-682A-49A7-9CBF-933C5F35E339}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD65D101-682A-49A7-9CBF-933C5F35E339}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD65D101-682A-49A7-9CBF-933C5F35E339}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B596501-69A2-43BB-8B3A-BE8D0A53655C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B596501-69A2-43BB-8B3A-BE8D0A53655C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B596501-69A2-43BB-8B3A-BE8D0A53655C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B596501-69A2-43BB-8B3A-BE8D0A53655C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{512B444F-9F73-46BE-AF8F-C111B02B7154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{512B444F-9F73-46BE-AF8F-C111B02B7154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{512B444F-9F73-46BE-AF8F-C111B02B7154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{512B444F-9F73-46BE-AF8F-C111B02B7154}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -59,6 +59,10 @@
       <Project>{55daf793-05ac-4e89-b69e-0a96f16cf1f2}</Project>
       <Name>SortingAlgorithms</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SortingCommonLib\SortingCommonLib.csproj">
+      <Project>{512b444f-9f73-46be-af8f-c111b02b7154}</Project>
+      <Name>SortingCommonLib</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using SortingAlgorithms;
 using System;
+using SortingCommonLib;
 
 namespace SortingAlgorithmsTests
 {

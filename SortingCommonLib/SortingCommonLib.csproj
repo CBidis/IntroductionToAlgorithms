@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{55DAF793-05AC-4E89-B69E-0A96F16CF1F2}</ProjectGuid>
+    <ProjectGuid>{512B444F-9F73-46BE-AF8F-C111B02B7154}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SortingAlgorithms</RootNamespace>
-    <AssemblyName>SortingAlgorithms</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <RootNamespace>SortingCommonLib</RootNamespace>
+    <AssemblyName>SortingCommonLib</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -40,18 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BubbleSort.cs" />
-    <Compile Include="InsertionSort.cs" />
-    <Compile Include="MergeSort.cs" />
+    <Compile Include="ArrayExtensions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Search.cs" />
-    <Compile Include="SelectionSort.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SortingCommonLib\SortingCommonLib.csproj">
-      <Project>{512b444f-9f73-46be-af8f-c111b02b7154}</Project>
-      <Name>SortingCommonLib</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
