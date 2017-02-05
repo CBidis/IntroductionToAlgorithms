@@ -14,7 +14,6 @@ namespace SortingInLinearTime
             {
                 c[number] = c[number] + 1;
             }
-
             // C[i] now contains the number of elements equal to i.
 
             for (var i = 1; i <= k; i++)
