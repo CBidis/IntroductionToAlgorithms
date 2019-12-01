@@ -44,6 +44,7 @@ namespace Algo.Tests
             //How to Balance the BST Tree?
             //Inorder traversal and creation of a New BST Tree that will hopefully be Balanced!!
             var balancedBTree = BinaryTree.GenerateBalancedTreeFromSortedArray(inorderNodes.ToArray());
+            balancedBTree.BFSTraversal();
             Console.ReadLine();
         }
 

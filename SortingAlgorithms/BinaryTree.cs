@@ -50,6 +50,26 @@ namespace SortingAlgorithms
             }
         }
 
+        public void BFSTraversal()
+        {
+            var queue = new Queue<Node>();
+            queue.Enqueue(Root);
+
+            while (queue.Count != 0)
+            {
+                Node tempNode = queue.Dequeue();
+                Console.Write(tempNode.Item + " ");
+
+                /*Enqueue left child */
+                if (tempNode.Leftc != null)
+                    queue.Enqueue(tempNode.Leftc);
+
+                /*Enqueue right child */
+                if (tempNode.Rightc != null)
+                    queue.Enqueue(tempNode.Rightc);
+            }
+        }
+
         /* Returns true if binary tree with root as root is height-balanced */
         public virtual bool IsBalanced(Node root, Height height)
         {
